@@ -30,6 +30,7 @@ public class Task2 {
         int f = first(queue);
         System.out.printf("Первый элемент из очереди: %d", f);
     }
+
     private static void enqueue(Queue<Integer> queue) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Введите число: ");
@@ -37,10 +38,12 @@ public class Task2 {
         queue.add(nextInt);
         scanner.close();
     }
+
     private static int dequeue(Queue<Integer> queue) {
         int remove = queue.remove();
         return remove;
     }
+
     private static int first(Queue<Integer> queue) {
         int peek = queue.peek();
         return peek;
